@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --background: #f9f9f9;
+  --headingColor: #292c34;
+  --fontColor: #97999b;
+  --icon-background: #fb6e52;
+  --footerColor: #292c34;
+  --footerFontColor: #797c82;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--headingColor);
+}
+a {
+  text-decoration: none;
+  color: var(--headingColor);
+}
+a:hover {
+  text-decoration: none;
+  color: var(--headingColor);
+}
+li {
+  list-style: none;
+}
+
+p {
+  font-size: 13px;
+  color: var(--fontColor);
+}
+
+h1 {
+  font-size: 38px;
+  padding: 10px 0px;
+}
+h2 {
+  font-size: 32px;
+  padding: 10px 0px;
+}
+h3 {
+  font-size: 25px;
+  padding: 10px 0px;
+}
+h4 {
+  font-size: 20px;
+  padding: 10px 0px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+button.btn {
+  font-size: 16px;
+  padding: 20px 40px;
+  background: var(--icon-background);
+  color: #fff;
+  font-weight: 500;
+}
+.container-fluid {
+  padding: 0;
+}
+section {
+  margin-bottom: 100px;
+}
+
+/* ================  Header  ================== */
+
+.header-part {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0px;
+  width: 100%;
+}
+.logo {
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  text-transform: uppercase;
+  margin: 0px 50px;
+  font-weight: 500;
+}
+nav ul li a {
+  color: var(--fontColor);
+}
+nav ul li:nth-child(4) {
+  margin-right: 0;
+}
+
+/* =================================== */
+
+.bannar {
+  background: linear-gradient(45deg, #0000008a, #0000008a),
+    url(../image/bannar.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bannar-content {
+  text-align: center;
+  padding: 230px 0px;
+}
+.bannar-text {
+  color: #fff;
+}
+.bannar-text h2,
+.bannar-text h4 {
+  margin: 20px 0px;
+}
+.bannar-btn {
+  padding: 20px 0px;
+}
+button.btn svg {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+/* ===================================== */
+
+section.skills-section {
+  margin-bottom: 50px;
+}
+.skills-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.skills-box-icon svg {
+  padding: 20px;
+  background: var(--icon-background);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 25px;
+}
+.skills-box {
+  padding: 30px;
+  text-align: center;
+}
+.skills-content {
+  padding: 0px 70px;
+}
+
+/* ======================================== */
+
+.image-part-heading {
+  padding: 0px 100px 100px;
+  text-align: center;
+  color: var(--icon-background);
+  font-style: italic;
+}
+.image-part {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  width: 100%;
+}
+.image-content {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* ======================================== */
+
+section.blog-section {
+  background: var(--background);
+  padding: 50px 0px;
+}
+.blog-heading {
+  text-align: center;
+  padding: 0px 0px 50px;
+}
+
+.blog-part {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.blog-text h4 a {
+  color: var(--icon-background);
+}
+
+.blog-text {
+  padding-top: 30px;
+}
+/* ========================================== */
+
+footer {
+  padding: 20px;
+  background: var(--footerColor);
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
+.footer-left {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 30px;
+  align-items: baseline;
+  color: var(--footerFontColor);
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-right ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 50px;
+}
+.footer-right ul li a {
+  color: #fff;
+}
+.footer-right ul li a:hover {
+  color: var(--icon-background);
+}
